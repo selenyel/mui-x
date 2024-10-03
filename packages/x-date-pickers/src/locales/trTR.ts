@@ -25,10 +25,10 @@ const trTRPickers: Partial<PickersLocaleText<any>> = {
   // DateRange labels
   start: 'Başlangıç',
   end: 'Bitiş',
-  // startDate: 'Start date',
-  // startTime: 'Start time',
-  // endDate: 'End date',
-  // endTime: 'End time',
+  startDate: 'Başlangıç tarihi',
+  startTime: 'Başlangıç saati',
+  endDate: 'Bitiş tarihi',
+  endTime: 'Bitiş saati',
 
   // Action bar
   cancelButtonLabel: 'iptal',
@@ -67,7 +67,7 @@ const trTRPickers: Partial<PickersLocaleText<any>> = {
     formattedTime || (value !== null && utils.isValid(value))
       ? `Saat seçin, seçilen saat: ${formattedTime ?? utils.format(value, 'fullTime')}`
       : 'Saat seç',
-  // fieldClearLabel: 'Clear',
+  fieldClearLabel: 'Temizle',
 
   // Table labels
   timeTableLabel: 'saat seç',
@@ -84,17 +84,17 @@ const trTRPickers: Partial<PickersLocaleText<any>> = {
   fieldMeridiemPlaceholder: () => 'aa',
 
   // View names
-  // year: 'Year',
-  // month: 'Month',
-  // day: 'Day',
-  // weekDay: 'Week day',
-  // hours: 'Hours',
-  // minutes: 'Minutes',
-  // seconds: 'Seconds',
-  // meridiem: 'Meridiem',
+  year: 'Yıl',
+  month: 'Ay',
+  day: 'Gün',
+  weekDay: 'Haftanın Günü',
+  hours: 'Saatler',
+  minutes: 'Dakikalar',
+  seconds: 'Saniyeler',
+  meridiem: 'Öğleden Önce/Sonra',
 
   // Common
-  // empty: 'Empty',
+  empty: 'Boş',
 };
 
 export const trTR = getPickersLocalization(trTRPickers);
